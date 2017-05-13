@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Franklin, ID | Weather </title>
+  <meta name="description" content="Shows the weather for Franklin, Idaho. Contains all necessary content and will show different content depending on the size of the screen they are using (i.e.-Smart phone or laptop).">
+  <meta name="viewport" content="width=device-width">
+  <link href="screen.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+   <header>
+      <p>&#9728; &#9731;</p> <!-- Images may soon replace these -->
+      <h1>Feeling Lucky?</h1>
+      <p class="tagline">Local Weather</p> <!-- Use CSS to style the tagline. May also need to be in different tag. -->
+   </header>
+   
+   <nav>
+      <ul>   <!-- Use CSS to hid the bullets and to make the list inline -->
+         <li><a href="#" title="Go to homepage">Home</a></li>
+         <li><a href="#" title="Go to the Franklin page">Franklin</a></li>
+         <li><a href="#" title="Go to Greenville page">Greenville</a></li>
+         <li><a href="#" title="Go to Springfield page">Springfield</a></li>
+         <li><a href="#" title="Search">Search</a></li>
+      </ul>
+   </nav>
+   
+   <main> <!-- Consider wrapping each section element with a div in order to style them and stay semantically correct -->
+      <section class="conditions">
+         <img src="#" title="Current condition image" alt="Current condition image" >
+         <h2>Current Conditions</h2>
+         <section>     <!-- Possibly replace this stucture with div tags -->
+            <h3>Wind</h3>
+            <p>1-5 MPH Southwest</p>
+            <h3>Precipitation</h3>
+            <p> 0in</p>
+         </section>
+      </section>
+      
+      <section class="temperature">
+         <img src="#" title="Image of Franklin, ID" alt="Image of Franklin, ID" >
+         <h2>Franklin, ID</h2>
+         <section class="#">     <!-- Div might be more appropriate to group this content and style it. -->
+            <h2><strong>70</strong></h2>
+            <p><img src="#" title="Image of current conditions" alt="Image of current conditions" > 90/66 </p>
+         </section>
+         <h3>Sunny</h3>
+      </section>
+      
+      <section class="forecast">
+         <img src="#" title="Random weather image" alt="Random weather image" > <!-- Revise title attribute for final product -->
+         <h2>Hourly Forecast</h2>
+         <ul>   <!-- Will replace this info with stuff in the JSON file -->
+            <li>8:00 AM : 67</li>
+            <li>8:00 AM : 67</li>
+            <li>8:00 AM : 69</li>
+         </ul>
+      </section>
+   </main>
+   
+   <footer>
+      <small>&copy;2017 Chandler Tew | <a href="../index.html">Link to Homepage</a></small>
+   </footer>
+</body>
+</html>
