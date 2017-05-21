@@ -6,12 +6,15 @@
   <meta name="description" content="Shows the weather for Franklin, Idaho. Contains all necessary content and will show different content depending on the size of the screen they are using (i.e.-Smart phone or laptop).">
   <meta name="viewport" content="width=device-width">
   <link href="screen.css" rel="stylesheet" type="text/css" media="screen">
+  <link rel="stylesheet" type="text/css" href="screen.css">   
 </head>
 <body>
    <header>
-      <p>&#9728; &#9731;</p> <!-- Images may soon replace these -->
-      <h1>Feeling Lucky?</h1>
-      <p class="tagline">Local Weather</p> <!-- Use CSS to style the tagline. May also need to be in different tag. -->
+      <div id="title">
+       <h1>&#9728;&#9731;Feeling Lucky?</h1>
+       <!-- <img src="images/logo-blue.jpg" alt="Feeling Lucky logo"> -->
+       <h1>Local Weather</h1> <!-- Use CSS to style the tagline.   May also need to be in different tag. -->
+      </div>
    </header>
    
    <nav>
@@ -25,36 +28,41 @@
    </nav>
    
    <main> <!-- Consider wrapping each section element with a div in order to style them and stay semantically correct -->
-      <section class="conditions">
-         <img src="#" title="Current condition image" alt="Current condition image" >
-         <h2>Current Conditions</h2>
-         <section>     <!-- Possibly replace this stucture with div tags -->
-            <h3>Wind</h3>
-            <p>1-5 MPH Southwest</p>
-            <h3>Precipitation</h3>
-            <p> 0in</p>
-         </section>
-      </section>
-      
-      <section class="temperature">
+     
+       <section class="overview">
          <img src="#" title="Image of Franklin, ID" alt="Image of Franklin, ID" >
          <h2>Franklin, ID</h2>
          <section class="#">     <!-- Div might be more appropriate to group this content and style it. -->
-            <h2><strong>70</strong></h2>
-            <p><img src="#" title="Image of current conditions" alt="Image of current conditions" > 90/66 </p>
+            <h2><strong>70&deg;</strong></h2>
+            <p><!--<img src="#" title="Image of current conditions" alt="Image of current conditions">-->&#9728; 90&deg;/66&deg;</p>
          </section>
          <h3>Sunny</h3>
       </section>
+      <section class="conditions">
+         <img src="#" title="Current condition image" alt="Current condition image" >
+         <h2>Current Conditions</h2>
+<!--
+         <section>
+           <div id="wind">
+             <h3>Wind:<span>1-5 MPH <br> Southwest</span></h3> <!-- Change the <br> to a ul soon -->
+<!--       </div>
+           <div id="precip">
+             <h3>Precipitation:<span>0in</span></h3>
+           </div>
+         </section>
+      </section>
       
-      <section class="forecast">
-         <img src="#" title="Random weather image" alt="Random weather image" > <!-- Revise title attribute for final product -->
+      <section class="hourly">
+         <img src="#" title="Random weather image" alt="Random weather image" > 
          <h2>Hourly Forecast</h2>
-         <ul>   <!-- Will replace this info with stuff in the JSON file -->
+<!-- Same reason as the above comment.
+         <ul>   
             <li>8:00 AM : 67</li>
             <li>8:00 AM : 67</li>
             <li>8:00 AM : 69</li>
          </ul>
       </section>
+-->
    </main>
    
    <footer>

@@ -1,0 +1,52 @@
+*  {
+   box-sizing: border-box;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure   {
+   display: block;
+}
+
+body  {
+   margin: 0;
+   padding: 0;
+   background-color: salmon;
+}
+
+main  {
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: center;
+   
+}
+
+nav   {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+
+nav ul {
+   display: flex;
+   line-height: 200%;
+   list-style-type: none;
+   padding: 0;
+}
+
+#title h1 + h1 {
+   text-align: right;
+   margin-top: -.7em;
+}
+
+#wind span, #precip span  {
+   float: right;
+   text-align: right;
+}
