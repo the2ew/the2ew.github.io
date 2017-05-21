@@ -15,16 +15,31 @@ figure   {
 }
 
 body  {
+   font-family: helvetica, serif;
+   font-size: 20px;
    margin: 0;
    padding: 0;
    background-color: salmon;
+   margin-top: -30px;
+}
+
+header   {
+   background-color: #A6D8DB;
+   padding-bottom: 8px;
+}
+
+#title h1 + h1 {
+   text-align: right;
+   margin-top: -.7em;
+   font-size: 20px;
 }
 
 main  {
    display: flex;
    flex-flow: column nowrap;
    align-items: center;
-   
+   background-image: url("images/sunny-winter.jpg");
+   background-size: cover;
 }
 
 nav   {
@@ -32,13 +47,7 @@ nav   {
    bottom: 0;
    left: 0;
    right: 0;
-}
-
-footer   {
-   position: fixed;
-   bottom: 7.5%;
-   left: 0;
-   right: 0;
+   background-color: #F07C6C;
 }
 
 nav ul {
@@ -46,14 +55,104 @@ nav ul {
    line-height: 200%;
    list-style-type: none;
    padding: 0;
+   font-size: 15px;
 }
 
-#title h1 + h1 {
-   text-align: right;
-   margin-top: -.7em;
+nav ul li   {
+   margin-left: 10px;
+}
+
+.nomargin   {
+   margin-left: 2.5px;
+}
+
+nav a:link {
+   text-decoration: none;
+   color: #4A4653;
+}
+
+nav a:visited  {
+   color: #4A4653;
+}
+
+nav a:hover {
+   color: #E7EF61;
+}
+
+nav a:active   {
+   color: #A6D8DB;
+}
+
+footer   {
+   position: fixed;
+   bottom: 7.5%;
+   left: 0;
+   right: 0;
+   font-size: 22px;
+   padding: 10px 0 10px 0;
+   background-color: #A6D8DB;
+}
+
+footer small   {
+   margin-left: 5px;
+}
+
+.conditions,
+.temp,
+.area {
+   background-color: rgba(200,200,200,.6);
+   margin: .2em auto;   
+   border: 1px solid;
+   border-radius: 5px;
+}
+
+.temp,
+.area {
+   text-align: center;
+   padding: 5px 25px 5px 25px;
+}
+
+.conditions {
+   padding: 0 65px 0 65px;
+   margin-top: .8em;
+}
+
+.temp h1 {
+   margin-bottom: -1em;
+}
+
+.rotate25   {
+   transform: rotate(25deg);
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+}
+
+.enlarge {
+   font-size: 40px;
+}
+
+.highlow {
+   float: right;
 }
 
 #wind span, #precip span  {
    float: right;
    text-align: right;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: Sansita, Comic Sans MS, sans-serif;
+}
+
+.overview h2,
+.conditions h2, 
+#wind h3,
+#precip h3   {
+   font-size: 20px;
 }

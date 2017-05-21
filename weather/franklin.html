@@ -6,12 +6,14 @@
   <meta name="description" content="Shows the weather for Franklin, Idaho. Contains all necessary content and will show different content depending on the size of the screen they are using (i.e.-Smart phone or laptop).">
   <meta name="viewport" content="width=device-width">
   <link href="screen.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="screen.css">   
 </head>
 <body>
+   
    <header>
       <div id="title">
-       <h1>&#9728;&#9731;Feeling Lucky?</h1>
+         <h1>&#9856;<span class="rotate25">&#9861;</span>Feeling Lucky?</h1>
        <!-- <img src="images/logo-blue.jpg" alt="Feeling Lucky logo"> -->
        <h1>Local Weather</h1> <!-- Use CSS to style the tagline.   May also need to be in different tag. -->
       </div>
@@ -19,7 +21,7 @@
    
    <nav>
       <ul>   <!-- Use CSS to hid the bullets and to make the list inline -->
-         <li><a href="#" title="Go to homepage">Home</a></li>
+         <li class="nomargin"><a href="#" title="Go to homepage">Home</a></li>
          <li><a href="#" title="Go to the Franklin page">Franklin</a></li>
          <li><a href="#" title="Go to Greenville page">Greenville</a></li>
          <li><a href="#" title="Go to Springfield page">Springfield</a></li>
@@ -30,17 +32,16 @@
    <main> <!-- Consider wrapping each section element with a div in order to style them and stay semantically correct -->
      
        <section class="overview">
-         <img src="#" title="Image of Franklin, ID" alt="Image of Franklin, ID" >
-         <h2>Franklin, ID</h2>
-         <section class="#">     <!-- Div might be more appropriate to group this content and style it. -->
-            <h2><strong>70&deg;</strong></h2>
-            <p><!--<img src="#" title="Image of current conditions" alt="Image of current conditions">-->&#9728; 90&deg;/66&deg;</p>
+      <!--   <img src="#" title="Image of Franklin, ID" alt="Image of Franklin, ID"> -->
+         <h2 class="area">Franklin, ID</h2>
+         <section class="temp">     <!-- Div might be more appropriate to group this content and style it. -->
+            <h1><strong>70&deg;</strong></h1>
+            <p><!--<img src="#" title="Image of current conditions" alt="Image of current conditions">--><span class="enlarge">&#9728;</span> <span>90&deg;/66&deg;</span></p>
          </section>
-         <h3>Sunny</h3>
+      <!--   <h3>Sunny</h3> -->
       </section>
       
        <section class="conditions">
-         <img src="#" title="Current condition image" alt="Current condition image" >
          <h2>Current Conditions</h2>
          <section>
            <div id="wind">
@@ -65,7 +66,7 @@
    </main>
    
    <footer>
-      <small>&copy;2017 Chandler Tew | <a href="../index.html">Link to Homepage</a></small>
+      <small>&copy;2017 Chandler Tew | <a href="../index.html">Link to Home</a></small>
    </footer>
 </body>
 </html>
