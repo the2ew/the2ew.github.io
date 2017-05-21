@@ -34,6 +34,13 @@ nav   {
    right: 0;
 }
 
+footer   {
+   position: fixed;
+   bottom: 7.5%;
+   left: 0;
+   right: 0;
+}
+
 nav ul {
    display: flex;
    line-height: 200%;
