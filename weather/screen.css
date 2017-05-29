@@ -156,3 +156,70 @@ h6 {
 #precip h3   {
    font-size: 20px;
 }
+
+.hourly  {
+   display: none;
+}
+
+@media only screen  and (min-width : 600px) {
+   main  {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      background-image: url("images/sunny-winter.jpg");
+      background-size: auto;
+   }
+   .overview   {
+      
+   }
+   
+   .conditions {
+      order: -1;
+   }
+   
+   .hourly  {
+      display: flex;
+      flex-flow: column;
+       background-color: rgba(200,200,200,.6);
+      margin: .2em auto;   
+      border: 1px solid;
+      border-radius: 5px;
+   }
+   
+   .hourly ul  {
+      list-style-type: none;
+   }
+   
+   nav   {
+      position: relative;
+      background-color: #F07C6C;
+      padding: 5px 0 5px 0;
+   }
+   
+   nav ul   {
+     display: flex;
+      flex-shrink: 1.5;
+     font-size: 1em;
+     margin-left: 7.5%;
+   }
+   nav ul li   {
+      margin-left: 10%;
+      font-size: 1.5em;
+   }
+   
+   #title h1 + h1 {
+      text-align: left;
+      margin-top: -1.5em;
+      margin-left: 9.75em;
+      
+   }
+   
+   footer   {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0;
+   }
+   
+
+}
