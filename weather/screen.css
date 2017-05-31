@@ -151,7 +151,8 @@ h6 {
 }
 
 .overview h2,
-.conditions h2, 
+.conditions h2,
+.hourly h2,
 #wind h3,
 #precip h3   {
    font-size: 20px;
@@ -161,16 +162,42 @@ h6 {
    display: none;
 }
 
+.center  {
+   text-align: center;
+}
+
 @media only screen  and (min-width : 600px) {
    main  {
       display: flex;
       flex-flow: row;
-      align-items: center;
+      align-items: stretch;
       background-image: url("images/sunny-winter.jpg");
-      background-size: auto;
+      background-size: cover;
    }
-   .overview   {
+   
+   .overview,
+   .conditions,
+   .hourly  {
+      display: flex;
+      flex-flow: column;
+      flex: 1 0;
+      background-color: rgba(200,200,200,.6);
+      margin: .2em auto;   
+      border: 1px solid;
+      border-radius: 5px;
+      padding-top: 20px;
+      padding-bottom: 320px;
       
+   }
+   
+   .temp {
+      width: 60%;
+      height: 150px;
+   }
+   
+   .area {
+      background-color: rgba(200,200,200,0);
+      border: none;
    }
    
    .conditions {
@@ -192,14 +219,16 @@ h6 {
    
    nav   {
       position: relative;
+      display: flex;
+      text-align: center;
       background-color: #F07C6C;
       padding: 5px 0 5px 0;
    }
    
    nav ul   {
      display: flex;
-      flex-shrink: 1.5;
-     font-size: 1em;
+     align-content: center;
+     flex-grow: 1;
      margin-left: 7.5%;
    }
    nav ul li   {
