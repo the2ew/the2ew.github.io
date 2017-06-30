@@ -26,18 +26,18 @@ $(function () {
        url : "https://api.wunderground.com/api/184bed1350fda725/geolookup/conditions/q/" + lat + "," + long + ".json",
        dataType : "jsonp",
        success : function(parsed_json) {
-          var location = parsed_json['current_oberservation']['display_location']['full'];
+          var location = parsed_json['current_observation']['display_location']['full'];
           $("#cityDisplay").html(location);
           $("#title").html(location + " |Weather Home");
           
           var temp_f = parsed_json['current_observation']['temp_f'];
-          $("currentTemp").html(Math.round(temp_f) + "&#8457F");
+          $("#currentTemp").html(Math.round(temp_f) + "&#8457");
           
           var summaryText = parsed_json['current_observation']['weather'];
           $("#summary").html(summaryText);
           
           var feel = parsed_json['current_observation']['feelslike_f'];
-          $("#add1").html("Feels like: " + feel + "&#176F")
+          $("#add1").html("Feels like: " + feel + "&#8457")
           
           var speed = parsed_json['current_observation']['wind_mph'];
           $("#add2").html("Wind: " + speed + " MPH");
