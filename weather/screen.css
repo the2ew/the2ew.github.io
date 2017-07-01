@@ -97,6 +97,10 @@ footer small   {
    margin-left: 5px;
 }
 
+footer span{
+   font-size: 8px;
+}
+
 .conditions,
 .temp,
 .area {
@@ -278,6 +282,10 @@ h6 {
       bottom: 0;
       right: 0;
       left: 0;
+   }
+   
+   footer span {
+      font-size: 18px;
    }
    
 
