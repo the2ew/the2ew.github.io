@@ -1,0 +1,106 @@
+*  {
+   box-sizing: border-box;
+}
+
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure   {
+   display: block;
+}
+
+body  {
+   font-family: helvetica, serif;
+   background-image: url(/acme/images/site/background.jpg);
+}
+
+#contain {
+   background-color: #ffffff;
+   width: 100%;
+}
+
+header   {
+   margin-left: 5px;
+   padding-top: 20px;
+   padding-bottom: 10px;
+}
+
+nav   {
+   background-color: #de2226;
+   padding: 1%;
+}
+
+nav ul   {
+   color: white;
+   font-size: 1.25em;
+   list-style-type: none;
+   display: flex;
+/*   justify-content: space-between;*/
+}
+
+nav ul li   {
+   margin-left: 2.5%;
+}
+
+main  {
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+h1 {
+   font-size: 30px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+#hero {
+   background-image: url(/acme/images/site/feature.jpg);
+   background-size: cover;
+   display: flex;
+   justify-content: flex-end;
+   height: 350px;
+}
+
+#hero ul {
+   list-style-type: none;
+   color: #990033;
+   
+}
+
+.margin  {
+   margin-bottom: -1%;
+}
+
+#rr   {
+   display: flex;
+   
+}
+
+#recipes ul {
+   list-style-type: none;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+#recipes ul li {
+}
+
+footer   {
+   border-top-color: #000000;
+   border-top-width: thick;
+   border-top-style: solid;
+   margin: 5px;
+   font-size: .75em;
+   text-align: center;
+}
+
+.nomargin   {
+   margin-left: -5%;
+}
+
