@@ -43,8 +43,8 @@ $('#navigation').on('click', 'a', function(evt){
             $('.productname').html(data[link].name);
             $('#image').html('<img src="' + pic + '">');
             $('#summary').html(data[link].description);
-            $('#manufac').html('<strong>Made by:</strong>' + data[link].manufacturer);
-            $('#review').html('<strong>Reviews:</strong>' + data[link].reviews + '/5 stars');
+            $('#manufac').html('<strong>Made by: </strong>' + data[link].manufacturer);
+            $('#review').html('<strong>Reviews: </strong>' + data[link].reviews + '/5 stars');
             $('#price').html("<strong>Price: $</strong>" + data[link].price);
             console.log(data[link].reviews);
             

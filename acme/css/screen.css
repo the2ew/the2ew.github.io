@@ -18,10 +18,13 @@ figure   {
 body  {
    font-family: helvetica, serif;
    background-image: url(/acme/images/site/background.jpg);
+   background-size: cover;
 }
 
 #contain {
+   display: table;
    background-color: #ffffff;
+   background-position: center;
    width: 100%;
 }
 
@@ -130,8 +133,12 @@ section h3 {
    display: flex;
 }
 
-#recipes ul li {
-   
+#recipes img   {
+   margin: 60px;
+}
+
+#image   {
+   padding-right: 5%;
 }
 
 footer   {
