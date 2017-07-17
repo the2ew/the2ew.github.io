@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title id="title">Acme</title>
+  <title id="title">Acme | Home</title>
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="stylesheet" href="/acme/css/screen.css" type="text/css" media="screen">
@@ -16,6 +16,7 @@
    <img src="/acme/images/site/logo.png" alt="Acme company logo" >
    </header>
    
+<!--
    <nav>
       <ul>
          <li id="#" class="nomargin">Home</li>
@@ -25,11 +26,22 @@
          <li id="#">Traps</li>
       </ul>
    </nav>
+-->
+   
+   <nav id="navigation">
+      <ul>
+         <li><a href="#" id="Home"></a></li>
+         <li><a href="#" id="Anvils"></a></li>
+         <li><a href="#" id="Explosives"></a></li>
+         <li><a href="#" id="Decoys"></a></li>
+         <li><a href="#" id="Traps"></a></li>
+      </ul>
+   </nav>
    
    <main>
       <div id="homecontent">
          
-         <h1>Welcome to Acme!</h1>
+         <h1 class="productname">Welcome to Acme!</h1>
          
          <div id="hero">
             <ul>
@@ -44,9 +56,11 @@
          <div id="rr">
             <section id="recipes">
                <h3>Featured Recipes</h3>
-               <ul>
+               <ul class="first">
                   <li><img src="/acme/images/recipes/bbqsand.jpg" alt=" Pulled Roadrunner BBQ" ><br ><a href="#">Pulled Roadrunner BBQ</a></li>
                   <li><img src="/acme/images/recipes/potpie.jpg" alt="Roadrunner Pot Pie" ><br ><a href="#">Roadrunner Pot Pie</a></li>
+               </ul>
+               <ul class="second">
                   <li><img src="/acme/images/recipes/soup.jpg" alt="Roadrunner Soup" ><br ><a href="#">Roadrunner Soup</a></li>
                   <li><img src="/acme/images/recipes/taco.jpg" alt="Roadrunner Tacos" ><br ><a href="#">Roadrunner Tacos</a></li>
                </ul>
@@ -65,11 +79,26 @@
          </div> <!-- End rr div -->
          
       </div> <!-- End homecontent div -->   
+      
+      <div id="navlinks">
+         <section id="product">
+            <span id="image" ></span>
+         </section>
+         <section id="specs">
+            <p id="summary"></p>
+            <p id="manufac"></p>
+            <p id="review"></p>
+            <p id="price"></p>
+         </section>
+      </div> <!-- End navlinks div -->
+      
    </main>
    
    <footer>
       <small><span>&copy; 2017 ACME Inc., All rights reserved.</span><br >
       All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.</small>
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+      <script src="/acme/js/acme_js.js"></script>
    </footer>
 </div>  
    

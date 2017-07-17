@@ -31,21 +31,60 @@ header   {
    padding-bottom: 10px;
 }
 
+/*
 nav   {
    background-color: #de2226;
    padding: 1%;
+   display: flex;
 }
 
 nav ul   {
    color: white;
    font-size: 1.25em;
    list-style-type: none;
-   display: flex;
-/*   justify-content: space-between;*/
+   display: inline-flex;
+   justify-content: space-around;
+   
 }
 
 nav ul li   {
    margin-left: 2.5%;
+}
+*/
+
+#navigation {
+   display: flex;
+   font-family: 'Roboto', sans-serif;
+}
+
+#navigation ul {
+   justify-content: space-around;
+   display: inline-flex;
+   flex-flow: nowrap;
+   width: 100%;
+   list-style-type: none;
+   padding: 1.2em;
+   overflow: hidden;
+   background-color: #de2226;
+}
+
+nav ul li {
+   font-size: 12pt;
+   display: inline-flex;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+#navigation ul li a {
+   display: flex;
+   display: block;
+   color: #ffffff;
+   padding: 10px;
+   text-decoration: none;
+}
+
+#navigation ul li a:hover {
+   background-color: lightcoral;
 }
 
 main  {
@@ -57,6 +96,7 @@ h1 {
    font-size: 30px;
    margin-top: 0px;
    margin-bottom: 0px;
+   text-align: center;
 }
 
 #hero {
@@ -76,18 +116,22 @@ h1 {
    margin-bottom: -1%;
 }
 
+section h3 {
+   text-align: center;
+}
+
 #rr   {
    display: flex;
-   
+   flex-flow: column;
 }
 
 #recipes ul {
    list-style-type: none;
    display: flex;
-   flex-wrap: wrap;
 }
 
 #recipes ul li {
+   
 }
 
 footer   {
@@ -102,4 +146,12 @@ footer   {
 .nomargin   {
    margin-left: -5%;
 }
+
+@media only screen and (min-width: 800px){
+ /*  Laptop and larger screen styles  */
+  
+   
+}
+
+
 
