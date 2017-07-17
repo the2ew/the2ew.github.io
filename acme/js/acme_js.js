@@ -56,6 +56,6 @@ else{
    $('title').replaceWith('<title>' + 'ACME | Home' + '</title>');
    $('#homecontent').show();
    $('#navlinks').hide();
-   $('#productname').html('Welcome to Acme!');
+   $('.productname').html('Welcome to Acme!');
 }   
 });
