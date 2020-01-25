@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<p id="demo">Let AJAX change this text.</p>
+
+<button type="button" onclick="loadDoc()">Change Content</button>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon-form/12/", true);
+  xhttp.send();
+}
+</script>
+  
+<!-- Above is w3schools tutorial from their site -->   
+<p>Above is w3schools tutorial</p>
+   
+<h2>What is AJAX?</h2>
+   
+<p>AJAX (Asynchronous JavaScript + XML) is not a new programming language. It is more of a technique of using existing technologies to make webpages perform better and reduce bandwidth consumption and load times. </p>
+   
+   <h4>Incorporated Technologies:</h4>
+   
+   <ul>
+   <li>HTML and CSS</li>
+   <li>Document Object Model (DOM)</li>
+   <li>JSON or XML (JSON moreso now)</li>
+   <li>XMLHttpRequest object</li>
+   <li>JavaScript</li>
+</ul>
+
+<h3>Why AJAX?</h3>   
+   
+<p>Before, when users input information or made actions, a new webpage would be loaded.</p>
+   
+<p>AJAX works in the background (asynchronous) to communicate with servers to send user requests and receive specified data. This keeps the rest of the page unaffected.</p>
+   
+<p>By sending asynchronously, the JavaScript does not have to wait for the server response, but can instead:<br />
+                <br />
+Execute other scripts while waiting for server response <br />
+Deal with the response after the response is ready</p>
+   
+   <button type="button"><a href="fresh.html">Test fresh</a></button>
+
+<img src="images/ajax_application.png" width="700px" ref="By DanielSHaischt, via Wikimedia Commons - https://commons.wikimedia.org/wiki/File%3AAjax-vergleich.svg, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=29724785" />  
+   
+   
+<footer>
+<br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <br />
+   <p id="footer">This is the footer</p>
+
+</footer>   
+</body>
+</html>
