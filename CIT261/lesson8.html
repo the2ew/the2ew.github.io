@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+   
+ <!-- CSS stylepage link -->
+   <link rel="stylesheet" type="text/css" href="css/website_conform.css" />
+   
+   <link rel="stylesheet" type="text/css" href="css/lesson8.css" />
+   
+</head>   
+   
+<body>
+
+<h1>Control CSS animations and transitions w/ JavaScript</h1>
+   
+<div id="container">
+   
+<div id="animate1"></div>
+<div id="animate2"></div>
+<div id="animate3"></div>   
+   
+</div> <!--End container div -->   
+   
+
+<button type="button" onclick="runJavaScript()">Use JavaScript</button>
+   
+<button type="button" onclick="stopJavaScript()">Unuse JavaScript</button>
+
+<script>
+   
+function runJavaScript() {
+ document.getElementById("animate1").className += " scriptrun1";
+ document.getElementById("animate2").className += " scriptrun2"; 
+ document.getElementById("animate3").className += " scriptrun3";   
+}
+   
+</script> 
+   
+<script>
+
+function stopJavaScript {
+   document.getElementById("animate1").className - " scriptrun1";
+}
+
+</script>   
+
+</body>
+</html>

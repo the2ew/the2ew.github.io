@@ -1,0 +1,43 @@
+body{
+   margin: 0px;
+   padding: 0px;
+}
+
+nav {
+   position: fixed;
+   background-color: grey;
+   opacity: .8;
+   height: 10%;
+   width: 100%;
+   margin: 0px;
+   padding: 0px;
+}
+
+nav ul {
+   list-style-type: none;
+   padding-left: 5px;
+   display:flex;
+}
+
+nav a {
+   font-style: italic;
+   text-decoration: none;
+   color: blue;
+}
+
+nav button {
+   background-color:darkgray;
+   height:
+}
+
+nav button:hover {
+   background-color: red;
+   opacity: .7;
+   transition: .5s;
+}
+
+nav button:active {
+   color:aliceblue;
+   opacity: .8;
+   transition: 0s;
+}

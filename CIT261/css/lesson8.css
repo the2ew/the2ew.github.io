@@ -1,0 +1,75 @@
+#container{
+   width: 350px;
+   height: 300px;
+   background-color: antiquewhite;
+}
+
+#animate1{
+   width: 30px;
+   height: 30px;
+   background-color: blue
+}
+
+#animate2{
+   width: 60px;
+   height: 40px;
+   background-color: black;
+}
+
+#animate3{
+   width: 80px;
+   height: 70px;
+   background-color: coral;
+}
+
+@-webkit-keyframes ani1  {
+   0%  {background-color: green;
+       width: 90px;}
+  25%  {background-color: dimgray;}
+  50%  {background-color: dimgray;}
+  100% {background-color: red;}
+}
+
+@keyframes ani1 {
+  0%   {background-color: green;}
+  25%  {background-color: dimgray;}
+  50%  {background-color: dimgray;}
+  100% {background-color: red;}
+   
+}
+
+.scriptrun1 {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    -webkit-animation-name: ani1;
+    -webkit-animation-duration: 4s; 
+    -webkit-animation-iteration-count: infinite;
+    animation-name: ani1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.scriptrun2 {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    -webkit-animation-name: ani1;
+    -webkit-animation-duration: 8s; 
+    -webkit-animation-iteration-count: infinite;
+    animation-name: ani1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+.scriptrun3 {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    -webkit-animation-name: ani1;
+    -webkit-animation-duration: 6s; 
+    -webkit-animation-iteration-count: infinite;
+    animation-name: ani1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
