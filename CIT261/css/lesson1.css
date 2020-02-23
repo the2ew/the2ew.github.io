@@ -1,0 +1,15 @@
+#container{
+   width: 50%;
+   height: 500px;
+   position: relative;
+   margin: 0 auto;
+   margin-top: 20%;
+   
+   background-color: azure;
+   box-shadow: 1px 3px 0px 2px;
+}
+
+#container form {
+   margin-left: 5px;
+   display:block;
+}

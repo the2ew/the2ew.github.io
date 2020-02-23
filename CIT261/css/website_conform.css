@@ -1,10 +1,12 @@
 body{
    margin: 0px;
    padding: 0px;
+   padding-top: 80px;
 }
 
 nav {
    position: fixed;
+   top: 0;
    background-color: grey;
    opacity: .8;
    height: 10%;
@@ -40,4 +42,8 @@ nav button:active {
    color:aliceblue;
    opacity: .8;
    transition: 0s;
+}
+
+p {
+   
 }

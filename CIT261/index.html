@@ -9,6 +9,9 @@
    <!-- CSS stylepage link -->
    <link rel="stylesheet" type="text/css" href="css/website_conform.css" />
    
+     <!-- CSS stylepage link -->
+   <link rel="stylesheet" type="text/css" href="css/lesson1.css" />
+   
    <!-- JavaScript link -->
    <script src="js/lesson1.js"></script>     
          
@@ -36,8 +39,45 @@
 </ul>
    
 </nav>
+   <h2>Javascript: Loops, Conditional Statements, Functions, Variables, Parameters, Arrays, Associative Arrays</h2>
+   <p>but not always</p>
    
+<div id ="container">
+   
+   <h3>Are you smarter than a 5th Grader?</h3>
+   
+   <form id="5thGrader">
+   
+   
+      <label for="rushmore">Who is the first president to be put on Mt. Rushmore?</label>
+      <input type="text" id="rushmore" size="30"> <br >
+      
+      <label for="capitol">What is the capitol city of Ukraine?</label>
+      <input type="text" id="capitol" size="30"> <br >
+      
+      <label for="zoo">Is a seal a mammal?</label> <br >
+        Yes <input type="checkbox" id="yes">
+        No <input type="checkbox" id="no">
+     
+      <!-- Using a button within the form 'submits' the form, thus refreshing page -->
+      <br>
+      <br>
+   
+   </form>
+   
+     <button onclick="smartForm()">Submit</button>
+     <button onclick="clearDisplay()">Clear</button>
+   
+   <div id ="containAns">
+      
+   <p id="answers"></p>
+      
+   </div> <!-- Answers containter --> 
+</div> <!--End container div -->
+   
+<button onclick="showCode()">Show code</button>
 
+<p id="codeView"></p>
 
 <footer>
    
