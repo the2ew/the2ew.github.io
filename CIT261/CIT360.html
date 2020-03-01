@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   
+<style>
+
+   #contain {
+      background-color: aliceblue;
+   }   
+   
+</style>   
+   
+<body>
+
+<h1>CIT225</h1>
+
+<div id ="contain">
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+</div>
+   
+   
+<button type="button" onclick="loadDoc()">Get Quotes</button>
+   
+<button type="button" onclick="clearDisplay()">Clear</button>
+
+<script>
+function loadDoc() {
+ 
+    document.getElementById("contain").style.display ="block";
+    
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "info.txt", true);
+  xhttp.send();
+}
+</script>
+   
+<script>
+
+   function clearDisplay(){
+   document.getElementById("contain").style.display ="none";
+}
+   
+</script>   
+   
+
+</body>
+</html>

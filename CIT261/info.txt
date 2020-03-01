@@ -1,1 +1,1 @@
-This is random information to be used and collected by AJAX and it's XMLhttpRequest object.
+"I've learned too late that I am in the wrong major" - 2020 CIT dropout
