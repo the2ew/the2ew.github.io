@@ -1,0 +1,17 @@
+*{
+    margin: 0 auto;
+    text-align: center;
+}
+td{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    color: black;
+    font-size: 5.0rem;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+}
+
