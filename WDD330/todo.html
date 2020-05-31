@@ -21,6 +21,8 @@
          padding: 30px 40px;
          background-color: aqua;
          text-align: center;
+         border-bottom-style: solid;
+         border-bottom-color: black;
       }
 
       input {
@@ -28,18 +30,32 @@
          pading: ;
          border: none;
          border-radius: 5px;
-         font-size: 20px; 
+         font-size: 20px;
          background-color: lightgray;
-         color: skyblue;
+         color: black;
+         box-shadow: 2px 3px black;
+      }
+
+      input:hover {
+         background-color: white;
+         transition: .4s;
+
       }
 
       button {
          margin: 0;
-         padding:;
+         padding: ;
          border: none;
          border-radius: 5px;
          font-size: 20px;
          background-color: lightgray;
+         box-shadow: 2px 3px black;
+      }
+
+      button:hover {
+         color: grey;
+         background-color: white;
+         transiton: .5s;
       }
 
       ul {
@@ -54,18 +70,36 @@
          padding: 10px 5px 10px 5px;
          background-color: lightgray;
       }
-      
+
       ul li:hover {
          opacity: .7;
          transition: .3s;
       }
-      
+
       ul li.completed {
+         color: red;
          text-decoration: line-through;
       }
-      
+
       ul li:nth-child(even) {
          background-color: grey;
+      }
+
+      .deleteListItem {
+         position: absolute;
+         right: 0;
+         top: 0;
+         padding-top: 20px;
+         padding-botton: 1px;
+         padding-left: 15px;
+         padding-right: 15px;
+      }
+
+      .deleteListItem:hover {
+         opacity: 1;
+         color: black;
+         background-color: aqua;
+         transition: .3s;
       }
    </style>
 
@@ -77,21 +111,45 @@
       <h1>To Do List</h1>
       <input type="text" id="userInput" placeholder="Add entry...">
       <button onclick="addEntry()">Add</button>
+      <button onclick="refreshList()">Refresh List</button>
    </div> <!-- end user input div -->
 
    <ul id="toDoList">
-      <li>Something</li>
+      <li>Buy more Voltage</li>
+      <li>Turn in WDD330 homework</li>
    </ul>
 
+   <!-- Begin JavaScript code -->
    <script>
-      
+      //Create a close "button" at the end of each list item already made
+      let toDo = document.getElementsByTagName("LI");
+      let i = 0;
+      for (i; i < toDo.length; i++) {
+         let closeButton = document.createElement("SPAN");
+         let txt = document.createTextNode("\u00D7");
+         closeButton.className = "deleteListItem";
+         closeButton.appendChild(txt);
+         toDo[i].appendChild(closeButton);
+      }
+
+      //Make list items disapear when close "button" is clicked
+      //      let close = document.getElementClassName("deleteListItem");
+      //      for(let i = 0; i < close.length; i++) {
+      //         close[i].onclick = function() {
+      //            let listItem = this.parentElement;
+      //            listItem.style.display = "none";
+      //         }
+      //      }
+      //      
+      //Add a class to clicked on list items that crosses the words out
       let list = document.querySelector('ul');
       list.addEventListener('click', function(ev) {
          if (ev.target.tagName === 'LI') {
             ev.target.classList.toggle('completed');
          }
       }, false);
-      
+
+      //Adds list items whenever an argument is put into the input box and the add button is pressed
       function addEntry() {
 
          let li = document.createElement("li");
@@ -106,23 +164,36 @@
             document.getElementById("toDoList").appendChild(li);
          } // End if statement
 
-         // Reset the input text box
-         document.getElementById("userInput").value = " ";
+         // Reset the input text box each time the function runs
+         document.getElementById("userInput").value = "";
 
-         //         let span = document.createElement("SPAN");
-         //         let txt = document.createTextNode("\u00D7");
-         //         
-         //         span.className ="close";
-         //         span.appendChild(txt);
-         //         li.appendChild(span);
-         //         
-         //         for (i = 0; i < close.length; i++) {
-         //            close[i].onclick = function() {
-         //               let div = this.parentElement;
-         //               div.style.display = "none";
-         //            }
+         //Add the close "button" to all created list items
+         let span = document.createElement("SPAN");
+         let txt = document.createTextNode("\u00D7");
+
+         span.className = "deleteListItem";
+         span.appendChild(txt);
+         li.appendChild(span);
+
+         for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+               let div = this.parentElement;
+               div.style.display = "none";
+            }
+         }
+
+      }
+
+      //Tried to find a way to delete list items that were no longer needed. 
+      //This function is temporary until I find the way to do it. This function reloads the page
+      function refreshList() {
+         location.reload();
+         //         refresh = document.getElementsByClassName("completed");
+         //         let i;
+         //         for (i = 0; i < refresh.length; i++) {
+         //            let list = this.className;
+         //            list.style.display = "none";
          //         }
-
       }
    </script>
 
