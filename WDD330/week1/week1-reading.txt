@@ -1,0 +1,5 @@
+
+
+Don't really have any notes. This was just a review of concepts I have already learned about in previous classes. I have read "Doing Stuff with Web Things" in previous classes so that really was a review. I already have a portfolio on GitHub created for a previous class that I will be using for this one. It is called chandler2ew.github.io.
+
+The mobile UX video course was really good refresher from what I learned from Bro. Robertson when I was doing a web programming class with him. We approached the UX dilemma much the same way. We started out with our small UX design first (phones) and would scale up (tablets) and then laptops, etc.

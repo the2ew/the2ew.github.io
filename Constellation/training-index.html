@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title id="title">Training | Constellation</title>
+   <meta name="viewport" content="width=device-width">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <link rel="stylesheet" href="training-css.css" type="text/css" media="screen">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <script src="training-js.js"></script>
+
+
+</head>
+
+<body>
+
+   <div id="container">
+      <!-- Logo, home, search bar, etc. -->
+      <header id="full-head">
+         <div id="left-head">
+            <h1>Constellation</h1>
+            <button type="button" onclick="changeTheme()">Change Theme</button>
+         </div>
+         <div id="right-head">
+            <ul>
+               <li><a href="/WDD330/index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+               <li><a href="#"><i class="fa fa-file"></i> Projects</a></li> <!-- fa fa-file-code-o -->
+               <li><a href="#"><i class="fa fa-fw fa-user"></i>Users</a></li>
+               <li><a href="#"><i class="fa fa-group"></i>About Us</a></li>
+            </ul>
+            <div id="search-contain">
+               <!-- php or js? -->
+               <input type="text" placeholder="Search" name="search">
+               <button onclick=""><i class="fa fa-search"></i></button>
+            </div>
+         </div>
+      </header>
+      <nav>
+         <ul>
+            <li><a onclick="stepOne()">Step #1</a></li>
+            <li><a onclick="stepTwo()">Step #2</a></li>
+            <li><a onclick="stepThree()">Step #3</a></li>
+            <li><a onclick="stepFour()">Step #4</a></li>
+         </ul>
+      </nav>
+      <div id="main-container">
+         <div id="left-nav">
+            <h2 class="underline">Topics</h2>
+
+            <ul>
+               <li>Workflow</li>
+               <li>Daily Scrum</li>
+               <li>Active Participation</li>
+               <li>Model Storming</li>
+               <li></li>
+               <li></li>
+               <li></li>
+            </ul>
+
+         </div>
+
+         <div id="right-nav">
+            <h2 class="underline">The Teams</h2>
+            <ul>
+               <li>FrontEnd</li>
+               <li>BackEnd</li>
+               <li>Quality Assurance</li>
+               <li>Analyst</li>
+            </ul>
+         </div>
+
+         <div id="right-nav-bot">
+            <h2 class="underline">External Links</h2>
+            <ul>
+               <li></li>
+            </ul>
+         </div>
+
+
+         <main id="dynamic-main">
+
+            <h1>Welcome to the Constellation app training page</h1>
+
+            <p>This webpage was created to help you better understand your unique role within this project. <br /><br />Within this webpage you will find links to all things that we have so far found relevent to anyone just starting out on this project. To the left and right we have links to specific areas that many that are new to the project find useful. <br /><br /> We also, for ease of access, have set up a four (4) step quick intro to what you need to get going. please click the links above to get started. </p>
+
+            <!--
+            <h3>Welcome to the Constellation project</h3>
+
+            <p>We are glad you decided to join us. Here is a breif explaination of how to use this website and the overall goal of Constellation</p>
+
+
+            <video id="main-vid" width="400" height="250" controls>
+               <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg">
+               Your browser doesn't support my bad code
+            </video>
+
+            <a target="_blank" href="devops.png">
+               <img id="main-image" src="images/devops.png" alt="DevOps graph">
+            </a>
+-->
+
+         </main> <!-- The middle section -->
+      </div> <!-- "end main-container" -->
+
+      <footer id="footer">
+         <p>Last updated: July 2020 | Part of the Constellation project | All rights reserved | Created by Chandler Tew </p>
+      </footer>
+   </div>
+
+
+</body>
+
+</html>

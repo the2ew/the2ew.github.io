@@ -1,0 +1,25 @@
+IIFE- Immediately Invoked Function Expressions. Function that is invoked as soon as it is defined. Put whole declaration into parenthesis. Used if the user wants temporary variables that will not remain in the program after the IIFE is done. Good for being initialization code since it only runs once.
+
+ 
+
+Closure - When nested functions are able to use variables that are outside their scope (a function defined within a function can see and use its parent function's variables). To finalize the closure, the outer function returns the inner function.  
+
+ 
+
+JavaScript is a multi-paradigm language. 
+
+Ajax = Asynchronous JavaScript and XML
+
+API = Application programming interface
+
+ 
+
+I have used the XMLHttpRequest object before. Fetch API has superseded this.
+
+Fetch API: 
+
+fetch(url)
+
+.then(//something)
+
+.catch(//something else)

@@ -1,0 +1,7 @@
+
+
+To run transitions, animations and transforms in many older web browsers and OS on android, you need to prefix the transforms with "webkit", and "-ms-transform" and such.
+
+Using the Canvas API will help improve the performance of websites by not having to download tons of images.
+
+SVG - Scalable Vector Graphics. Unlike other images, these preserve image/shape quality at any size.

@@ -1,0 +1,13 @@
+
+
+Form validation is when the browser or web server check to verify that the data inputted within certain fields within a form are formatted correctly.
+
+Form validation for 3 main reasons:
+
+-Get correct data in correct format
+
+-Protect users' data
+
+-Protect the company
+
+HTML has built-in validation features. Using some CSS, the creator can do something like "input:invalid { box-shadow: red;}" or something else. The invalid selector will proc when the form cannot be submitted due to when the web server or browser dictates that the form doesn't meet the validation requirements.

@@ -1,0 +1,11 @@
+localStorage is an HTML5 web storage API.
+
+LocalStorage works in key-value pairs.  localStorage.getItem('key') will display whatever value was stored in the key by doing a localStorage.setItem('key', 'value').
+
+Geolocation API shows location of the user of the website. Permission is given to the user, who can allow or disallow this.
+
+Web workers?
+
+HTML5 makes using multimedia within browsers much easier.
+
+<audio> and <video> are used to display audio and video respectively. The src attribute is also used within those tags to locate your video or audio file.

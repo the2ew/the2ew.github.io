@@ -1,0 +1,5 @@
+
+
+alerts used to be a way to debug, but is now essentially deprecated. Use console.log(), breakpoints (debugger command, etc.), use try catch statements.
+
+strict mode produces more exceptions and warnings and doesnt allow the use of some deprecated features. 'use strict'; within JavaScript file to implement the mode. 

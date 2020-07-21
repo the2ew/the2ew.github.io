@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<button id="fetchApi">Get Info</button>
+<div id="postApi"></div>   
+   
+<script>
+ 
+   const pokeUrl ='https://pokeapi.co/api/v2/';
+   const apiButton = document.getElementById('fetchApi');
+   const outputDiv = document.getElementById('postApi');
+ 
+apiButton.addEventListener ('click', () => {
+   fetch(pokeUrl)
+   .then( response => {
+      outputDiv.innerHTML = 'Waiting for response...';
+   if(response.ok) {
+      return response;
+   }
+      throw Error(response.statusText);
+   })
+   .then( response => response.json() )
+   .then( data => outputDiv.innerText = data.value )
+   .catch( error => console.log('There was an error: ', error))
+}, false);
+   
+ //Promise that fetches the url and converts
+ //the json data into an object 
+
+//   fetch('https://pokeapi.co/api/v2/pokemon/5')
+//   .then( response => response.json() )
+//   .then( data => console.log(Object.entries(data)) )
+//   .catch( error => console.log('There was an error ' , error))
+   
+  
+   
+  ///////////////////////////////////////// 
+   
+   //   document.getElementById("postApi").innerHTML = ;
+// 
+   
+   
+     //Fetches just the pure text of the APIs
+//   //fetch(starUrl)
+//   fetch(pokeUrl)
+//      .then((response) => {
+//         if(response.ok) {
+//            return response;
+//         }else
+//         throw Error(response.statusText);   
+//      
+//      })
+//      .then( response => response.text() )
+//      .then( text => console.log(text) )
+//      .catch( error => console.log('Some sort of error occured.') )
+   
+//   const starUrl ='https://swapi.co/';
+   
+   //Tried creating new response object to access
+   //starUrl
+//   const response = new Response( 'What\'s up?', {
+//      ok: true,
+//      status: 200,
+//      statusText: 'Okay',
+//      type: 'no-cors',
+//      url: '/api'
+//   });
+//   
+//   const request = new Request('https://swapi.co/api/people', {
+//      method: 'GET',
+//      mode: 'no-cors',
+//      redirect: 'follow',
+//      cache: 'no-cache'
+//   });
+</script>   
+   
+</body>
+</html>

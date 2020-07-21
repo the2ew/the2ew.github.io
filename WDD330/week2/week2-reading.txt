@@ -1,0 +1,21 @@
+Chandler Tew
+
+Week 2 Notes
+
+WDD330
+
+ 
+
+Week 2 Notes: 
+
+What are template literals?
+
+  Template literals are strings that use the " ` " character to surround the string instead of the normal double quotes or single quotes. Template literals help readability of code and help the coder and others see where the variables are inserted within a string. To use template literals, you must encase the string with the " ` " character. To call said string, use ${stringVariableName}.
+
+Template literals also help with line breaks and tabs. In normal strings, user has to use "blahbhabh " \n + "blooad" or with templates a user can modify the layout without those special characters.
+
+ 
+
+Multiple built in functions for altering arrays. There is the "toString()" (convert array to string of separated array values), the "join()" (same as toString() but allows option to separate with specific characters), pop() (removes last piece of the array), push() (add new piece to the end of array), and splice() (is used to add new items to array. Can add items to specific positions within the array). More functions, but some of most important.
+
+Concat().

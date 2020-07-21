@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pokemon Paginator | W08 Team Activity</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header>
+    <a onclick="window.history.back()" href="#">&lt;-- Go back</a>
+    <h2>Pokemon Paginator</h2>
+  </header>
+  <main>
+    <table id="pokemon-list"></table>
+    <div id="load-box">
+      <button id='load-prev' onclick="loadPrevPokemon()">Back</button>
+      ...
+      <button id='load-next' onclick="loadNextPokemon()">Next</button>
+    </div>
+  </main>
+
+  <script src="pokemonList.js"></script>
+  <script src="pokemonDetails.js"></script>
+  <script>
+    loadNextPokemon();
+  </script>
+</body>
+</html>
